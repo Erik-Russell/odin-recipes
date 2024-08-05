@@ -7,7 +7,8 @@
   font-style: normal;
   background-color: bisque;
   text-align: center;
-  margin: auto;
+  text-decoration: none;
+  margin: 0 auto;
   /* TODO:
     REMOVE
     BORDER 
@@ -16,12 +17,14 @@
 }
 
 img {
-    max-width: 400px;
-    max-height: 400px;
+    max-width: 50vw;
+    max-height: 50vh;
 }
 
-/* index.html */
-
+body {
+    margin: 32px auto;
+    width: 80vw;
+}
 
 body h1 {
     font-size: 10vh;
@@ -29,9 +32,7 @@ body h1 {
     color: rgb(2, 59, 2);
 }
 
-body {
-    max-width: 80vw;
-}
+/* index.html */
 
 .recipe-list {
     list-style: none;
@@ -43,19 +44,24 @@ body {
     padding: 1em;
 }
 
-.recipe-link {
-    text-decoration: none;
-}
-
 
 /* recipies */
+
+.recipe .container {
+    margin: 8px auto;
+}
+
+.ingredients li {
+    display: inline-block;
+    margin: 16px auto;
+}
 
 .recipe h2 {
     font-size: 4vh;
 }
 
 .recipe p{
-    width: 50%;
+    width: 75%;
 }
 
 .recipe ul,
